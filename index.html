@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffy Jalal - Personal Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Raffy Jalal</h1>
+        <p>Pre-Junior @ Drexel University</p>
+        <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#personal-info">Personal Information</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am an Honors Computer Science student minoring in Data Science. Currently, I am looking for a summer internship and am willing to work from June 12 - September 22.</p>
+        </section>
+
+        <section id="personal-info">
+            <h2>Personal Information</h2>
+            <p>Check out my Mini Bike!</p>
+            <img src="minibike.jpeg" alt="Mini bike" style="max-width: 50%; height: auto;">
+            <p>Last summer I was extremely bored so I decided to build this from scratch. It was a little project of mine that took a couple of days to finish.</p>
+            <p>Equipped with a Harbor Freight Predator 224cc Engine. It goes darn fast, at least 50 mph.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can contact me through the following methods:</p>
+            <ul>
+                <li><strong>Email:</strong> rmj77@drexel.edu</li>
+                <li><strong>Phone:</strong> (267)-467-3865</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/raffyjalal">linkedin.com/in/raffyjalal</a></li>
+            </ul>
+        </section>
+
+        <section id="spotify">
+            <h2>My Spotify Playlists</h2>
+            <div class="spotify-container">
+                <p>This is a compilation of every song I like.</p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/33QXqJRRbTLJCBLY1f2BlH?utm_source=generator" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                
+                <p>This is a more selective playlist that features most of my favorite songs. Every time I try to filter them I get very picky.</p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1DE9PomIrmcIUuvuQlYh9C?utm_source=generator" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                
+                <p>Juice WRLD is my favorite artist. It's a controversial opinion because people think I am heartbroken but then I have to back myself up with his other music that isn't mainstream.</p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5HUFZrgPfpf3c0KMyMsadi?utm_source=generator" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Raffy Jalal</p>
+    </footer>
+
+    <script>
+        document.documentElement.setAttribute('data-theme', 'dark');
+
+        function toggleTheme() {
+            if (document.documentElement.getAttribute('data-theme') === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        }
+    </script>
+</body>
+</html>
