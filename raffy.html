@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffy Jalal - Personal Webpage</title>
+    <style>
+        :root {
+            --background-color: #f4f4f4;
+            --text-color: #333;
+            --header-footer-background: #d32f2f;
+            --header-footer-text: white;
+            --nav-background: #b71c1c;
+            --nav-text: white;
+            --nav-hover-background: #ff6659;
+            --nav-hover-text: black;
+            --section-background: white;
+            --box-shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme="dark"] {
+            --background-color: #121212;
+            --text-color: #e0e0e0;
+            --header-footer-background: #b71c1c;
+            --header-footer-text: #e0e0e0;
+            --nav-background: #333;
+            --nav-text: #e0e0e0;
+            --nav-hover-background: #575757;
+            --nav-hover-text: #e0e0e0;
+            --section-background: #1e1e1e;
+            --box-shadow: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: all 0.3s ease-in-out;
+        }
+
+        header {
+            background-color: var(--header-footer-background);
+            color: var(--header-footer-text);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--nav-background);
+        }
+
+        nav a {
+            color: var(--nav-text);
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: var(--nav-hover-background);
+            color: var(--nav-hover-text);
+        }
+
+        section {
+            padding: 2rem;
+            margin: 1rem;
+            background-color: var(--section-background);
+            border-radius: 8px;
+            box-shadow: 0 0 10px var(--box-shadow);
+        }
+
+        footer {
+            background-color: var(--header-footer-background);
+            color: var(--header-footer-text);
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: var(--header-footer-background);
+        }
+
+        .theme-toggle {
+            cursor: pointer;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: var(--header-footer-background);
+            color: var(--header-footer-text);
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Raffy Jalal</h1>
+    <p>Honors Computer Science Major Minoring in Data Science</p>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#personal-info">Personal Information</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Raffy Jalal, an Honors Computer Science major with a minor in Data Science. I am passionate about technology, programming, and data analysis. I am currently seeking co-op positions to gain practical experience in the tech industry. Welcome to my personal webpage where you can learn more about my projects, experiences, and how to get in touch with me.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here are some of my projects:</p>
+        <ul>
+            <li><strong>Project 1:</strong> Description of project 1.</li>
+            <li><strong>Project 2:</strong> Description of project 2.</li>
+            <li><strong>Project 3:</strong> Description of project 3.</li>
+        </ul>
+    </section>
+
+    <section id="experiences">
+        <h2>Experiences</h2>
+        <p>Here are some of my experiences:</p>
+        <ul>
+            <li><strong>Experience 1:</strong> Description of experience 1.</li>
+            <li><strong>Experience 2:</strong> Description of experience 2.</li>
+            <li><strong>Experience 3:</strong> Description of experience 3.</li>
+        </ul>
+    </section>
+
+    <section id="personal-info">
+        <h2>Personal Information</h2>
+        <p>Here is some personal information about me:</p>
+        <ul>
+            <li><strong>Email:</strong> raffy.jalal@example.com</li>
+            <li><strong>Phone:</strong> (123) 456-7890</li>
+            <li><strong>Location:</strong> City, State</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can contact me through the following methods:</p>
+        <ul>
+            <li><strong>Email:</strong> raffy.jalal@example.com</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/raffyjalal">linkedin.com/in/raffyjalal</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/raffyjalal">github.com/raffyjalal</a></li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Raffy Jalal</p>
+</footer>
+
+<script>
+    function toggleTheme() {
+        if (document.documentElement.getAttribute('data-theme') === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    }
+</script>
+
+</body>
+</html>
