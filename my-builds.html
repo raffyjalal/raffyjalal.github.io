@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Builds - Raffy Jalal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Raffy Jalal</h1>
+        <p>Honors Pre-Junior Student @ Drexel University Studying Computer Science w/ Minor in Data Science</p>
+        <a href="Raffy.Jalal Resume.pdf" target="_blank" class="resume-link">Access my Resume Here</a>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="my-builds.html">My Builds</a>
+        <a href="spotify.html">Spotify</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <main class="container">
+        <section id="my-builds">
+            <h2>My Builds</h2>
+            <div class="build">
+                <h3>MotoVox MBX10 (Custom)</h3>
+                <img src="images/motovox2.jpeg" style="max-width: 49%; height: auto;">
+                <p>Last summer I was extremely bored so I decided to build this from scratch. It was a little project of mine that took a couple of days to finish.</p>
+                <p>Parts:</p>
+                <ul>
+                    <li>Predator 224cc</li>
+                    <li>Tires</li>
+                    <li>Centrifugal Clutch</li>
+                    <li>Sprocket</li>
+                    <li>#35 Chain</li>
+                    <li>Chain Guard</li>
+                    <li>Center Rear Exhaust</li>
+                    <li>Carburetor</li>
+                    <li>Brake Lever</li>
+                    <li>Red Grips and Throttle</li>
+                    <li>Seat</li>
+                    <li>Kill Switch</li>
+                </ul>
+                <p>This was such a fun first build. It took a while to create it as I was buying and returning parts. With trial and error I finally figured it out. I ended up selling it and made extraordinary profit.</p>
+                
+                <h>&nbsp</h>
+
+                <h3>Coleman CT200u (Custom)</h3>
+                <img src="images/coleman.JPG" style="max-width: 50%; height: auto;">
+                <p>After I built the Motovox, my friend wanted to build another bike with him.</p>
+                <p>Parts:</p>
+                <ul>
+                    <li>Predator 212cc</li>
+                    <li>Tires</li>
+                    <li>Centrifugal Clutch</li>
+                    <li>Sprocket</li>
+                    <li>#40 Chain</li>
+                    <li>Chain Guard</li>
+                    <li>Exhaust</li>
+                    <li>Carburetor</li>
+                    <li>Brake Lever</li>
+                    <li>Black Grips and Throttle</li>
+                    <li>Metal Fender</li>
+                    <li>Headlight</li>
+                </ul>
+                <p>This was pretty straight forward. I am trying to convince my friend at get it DMV approved by adding a title to it. All he would have to is add turn signal lights and get PENNDOT approved tires.</p>
+
+                <h>&nbsp</h>
+
+                <h3>Tao Tao Quad (Custom)</h3>
+                <img src="images/firstquad2.jpg" style="max-width: 49%; height: auto;">
+                <img src="images/firstquad.jpg" style="max-width: 49%; height: auto;">
+                <p>Those two bikes were completed in less than two weeks. It was a fun hobby so I was always scouting Facebook Marketplace and came upon this quad. I was willing to tackle on something a little different and having a quad would be sick.</p>
+                <p>Parts:</p>
+                <ul>
+                    <li>Predator 212cc</li>
+                    <li>Torque Converter</li>
+                    <li>Exhaust</li>
+                    <li>Carburetor</li>
+                    <li>Drum Brakes</li>
+                    <li>Hydraulic Brakes</li>
+                </ul>
+                <p>The hardest part was adding the torque converter because I tried to straight chain it with a ordinary centrifugal clutch. ATV's won't allow that due to the four tires need more torque.</p>
+
+                <p>&nbsp</p>
+
+                <h3>Tao Tao Quad (Current Build)</h3>
+                <img src="images/mini_quad.jpeg" style="max-width: 49%; height: auto;">
+                <p>Facebook marketplace always has steals. This guy sold me this quad for only $100 because he didn't know to put on the tires on the rims.</p>
+                <p>Parts:</p>
+                <ul>
+                    <li>Battery</li>
+                    <li>Hydraulic Brake</li>
+                </ul>
+                <p>I am still working on this but I have a buyer that is paying me $500 to finish it.</p>
+
+                <h>&nbsp</h>
+
+                <h3>Mid Sized ATV (Current Build)</h3>
+                <img src="images/atv.jpeg" style="max-width: 49%; height: auto;">
+                <p>This is going to be such an interesting build. It might look small but this frame is huge. I am in the process of learning how to weld and am considering take apart the entire frame to perfect the build.</p>
+                <p>Parts needed:</p>
+                <ul>
+                    <li>Engine?????? Might get a 420cc or 301cc Predator engine</li>
+                    <li>Mounting Bracket</li>
+                    <li>#530 Motorcycle Chain</li>
+                    <li>Carburetor</li>
+                    <li>Torque Converter</li>
+                    <li>Hydraulic Brakes</li>
+                </ul>
+                <p>This is a very experimental build and I look forward to adding a title to it. Driving on the road legally would be very fun and I could drive to work in swag. 😎</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Raffy Jalal</p>
+    </footer>
+
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+    <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>    
+
+    <script>
+        document.documentElement.setAttribute('data-theme', 'dark');
+
+        function toggleTheme() {
+            if (document.documentElement.getAttribute('data-theme') === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

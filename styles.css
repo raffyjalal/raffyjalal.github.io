@@ -43,6 +43,21 @@ header {
     text-align: center;
 }
 
+.resume-link {
+    display: block;
+    margin-top: 1rem;
+    color: var(--header-footer-text);
+    background-color: var(--header-footer-background);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.resume-link:hover {
+    background-color: var(--nav-hover-background);
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -90,10 +105,9 @@ h2 {
     color: var(--header-footer-background);
 }
 
-.theme-toggle {
+.theme-toggle, .back-to-top {
     cursor: pointer;
     position: fixed;
-    top: 1rem;
     right: 1rem;
     padding: 0.5rem 1rem;
     background-color: var(--header-footer-background);
@@ -101,6 +115,14 @@ h2 {
     border: none;
     border-radius: 4px;
     z-index: 1000;
+}
+
+.theme-toggle {
+    top: 1rem;
+}
+
+.back-to-top {
+    top: 3rem;
 }
 
 .center-content {
