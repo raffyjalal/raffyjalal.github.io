@@ -1,66 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Webpage</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raffy Jalal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Raffy Jalal</h1>
-        <p>Honors Pre-Junior Student @ Drexel University Studying Computer Science w/ Minor in Data Science</p>
-        <a href="Raffy.Jalal Resume.pdf" target="_blank" class="resume-link">Access my Resume Here</a>
-    </header>
+  <header class="hero">
+    <h1>Raffy Jalal</h1>
+    <p>Software Developer | AI Enthusiast | Drexel University</p>
+    <a href="Raffy_Jalal_Resume.pdf" class="button">View My Resume</a>
+    <a href="https://linkedin.com/in/raffyjalal" class="button" target="_blank">
+      <img src="images/linkedin-icon.png" alt="LinkedIn" style="width: 16px; vertical-align: middle; margin-right: 8px;"> LinkedIn
+    </a>
+    <a href="https://github.com/raffyjalal" class="button" target="_blank">
+      <img src="images/github-icon.png" alt="GitHub" style="width: 16px; vertical-align: middle; margin-right: 8px;"> GitHub
+    </a>
+  </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="my-builds.html">My Builds</a>
-        <a href="spotify.html">Spotify</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <section class="about container">
+    <h2>About Me</h2>
+    <p>
+      I'm a Computer Science student at Drexel University graduating in 2027 with a focus on AI, full-stack development, and hardware integration. I love building things that solve real problems—from machine learning applications to hands-on mechanical builds. Outside of tech, I’m passionate about playing basketball, hanging out with friends, and doing mukbangs—I once ate 100 Popeyes nuggets in under an hour. I love spicy food (I’m Bengali, of course) and think Indian cuisine is hands down the best—my favorites are butter chicken or traditional roast. I live in Lansdale, PA and I’m always open to connecting. You can reach me at 267-467-3865 or email me at rmj77@drexel.edu.
+    </p>
+  </section>
 
-    <main class="container">
-        <section id="welcome">
-            <h2>Welcome to my personal webpage!</h2>
-            <p>Feel free to explore and get to know me better and reach out if you have any questions</p>
-        </section>
+  <section class="projects container">
+    <h2>Projects</h2>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>You can contact me through the following:</p>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:rmj77@drexel.edu">Click to Send me an Email</a></li>
-                <li><strong>Phone:</strong> <a href="tel:267-467-3865">267-467-3865</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/raffyjalal">Raffy Jalal's LinkedIn</a></li>
-            </ul>
-        </section>
-    </main>
+    <div class="project-card">
+      <h3>AI Vehicle Damage Estimator</h3>
+      <p>Built with Python, TensorFlow, FastAPI, and Streamlit to classify vehicle damage and estimate repair costs.</p>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Raffy Jalal</p>
-    </footer>
+    <div class="project-card">
+      <h3>Sneaker Market Intelligence</h3>
+      <p>Golang, TensorFlow, React—tracks sneaker prices and trends with image recognition and live data scraping.</p>
+    </div>
 
-    <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
-    <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>    
+    <div class="project-card">
+      <h3>Digital Smart Photo Frame</h3>
+      <p>SwiftUI iPad app with facial recognition and motion detection for smart home photo display.</p>
+    </div>
 
-    <script>
-        document.documentElement.setAttribute('data-theme', 'dark');
+  </section>
 
-        function toggleTheme() {
-            if (document.documentElement.getAttribute('data-theme') === 'dark') {
-                document.documentElement.setAttribute('data-theme', 'light');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'dark');
-            }
-        }
+<section class="builds container">
+  <h2>My Builds</h2>
 
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    </script>
+  <div class="project-card">
+    <h3>Modded Coleman CT200U</h3>
+    <img src="images/coleman.JPG" alt="Coleman" class="project-image" style="width: 50%;">
+    <p>
+      Parts:
+      <ul style="margin-left: 20px;">
+        <li>Predator 212cc engine</li>
+        <li>Mikuni VM22 Carburetor (22mm)</li>
+        <li>Centrifugal Clutch</li>
+        <li>#40 Chain</li>
+        <li>Exhaust (left-side mounted, curved over to right-side exit)</li>
+        <li>Hydraulic Brake Lever</li>
+        <li>Headlight</li>
+      </ul>
+      This build features a performance-focused setup with a Mikuni 22mm carburetor for smoother throttle response and power delivery. The exhaust system is custom-mounted starting on the left and sweeping over to the right for a unique look and improved clearance. Hydraulic brakes ensure better stopping power for off-road use. I am also trying to convince my friend to get it DMV approved by adding a title to it. All he would need to do is install turn signals and get PENNDOT-approved tires.
+      While I could push this build for even higher speeds, I value my life since these machines aren't street legal and are best kept to controlled environments.
+    </p>
+    <p>Both the governor limiter and stock flywheel were removed and replaced with a billet aluminum flywheel, increasing torque and allowing for higher RPMs. With these Stage 2 modifications, the bike can reach realistic top speeds of approximately 50-55 mph depending on gearing and terrain.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Custom Quad</h3>
+    <img src="images/atv.jpeg" alt="Quad" class="project-image" style="width: 50%;">
+    <p>
+      Parts:
+      <ul style="margin-left: 20px;">
+        <li>Predator 301cc engine welded to frame</li>
+        <li>Mikuni VM26 Carburetor (26mm)</li>
+        <li>3/4 inch Torque Converter</li>
+        <li>Center-mounted Exhaust</li>
+        <li>Shock Absorber</li>
+        <li>Hydraulic Brakes (Front & Rear)</li>
+        <li>Headlight</li>
+      </ul>
+      This custom-built quad features a Predator 301cc engine welded directly to the frame for maximum durability. It uses a Mikuni VM26 carburetor for enhanced power and throttle response, and a center-mounted exhaust for balanced performance. With hydraulic brakes on both the front and rear and a fully functional suspension, it's built for aggressive off-road use while maintaining reliability.
+    </p>
+    <p>Similar to the Coleman, I removed the engine's governor limiter and upgraded to a billet flywheel for enhanced torque and top-end speed. With the Stage 2 build, this quad is capable of reaching around 55-60 mph while maintaining strong off-road acceleration. I also plan to add a speaker system to the quad for music during rides, and unlike the Coleman, this build has the potential to be DMV approved with the right modifications for road use.</p>
+  </div>
+</section>
+
+<section class="spotify container">
+  <h2>Spotify</h2>
+  <p>Music fuels my creativity, whether I’m coding, building, or just chilling. Some songs may not display because they’re local files—open the preview in Spotify to see everything. Below are playlists featuring my favorite songs of all time, my favorite artist Travis Scott, Juice WRLD with lots of unreleased tracks, and Lil Uzi Vert who still has hidden gems despite being past his prime.</p>
+
+  <h3>All-Time Favorite Songs</h3>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6KSOVamsZ9rtDLwk50SBPE?utm_source=generator&theme=0" width="100%" height="400" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+  <h3>Favorite Travis Scott Songs</h3>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3vJw7Eu5u5UzXNJypoUtOQ?utm_source=generator" width="100%" height="400" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+  <h3>Favorite Juice WRLD Songs</h3>
+  <p>Includes a lot of local files—Juice WRLD has thousands of unreleased tracks that are incredible. RIP Juice WRLD.</p>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/08QPJLqIiTNjrEvz7pJ0J8?utm_source=generator" width="100%" height="400" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+  <h3>Favorite Lil Uzi Vert Songs</h3>
+  <p>Uzi is kind of washed now, but in 2025 alone over 500 of his songs leaked—this playlist is updated with the best ones.</p>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0qqQf3MJmC0yUm1cWnA4cL?utm_source=generator" width="100%" height="400" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Raffy Jalal</p>
+  </footer>
+
+  <button id="theme-toggle" class="floating-button">🌓</button>
+  <a href="contact.html" class="floating-contact-button">📞 Contact Me</a>
+
+  <script>
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (prefersDark) {
+      document.body.classList.add('dark');
+    }
+
+    const toggleButton = document.getElementById('theme-toggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
 </body>
 </html>

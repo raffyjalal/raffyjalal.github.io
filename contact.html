@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Raffy Jalal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="contact-container">
+    <h1>Contact Me</h1>
+    <p><strong>Email:</strong> <a href="mailto:rmj77@drexel.edu">rmj77@drexel.edu</a></p>
+    <p><strong>Phone:</strong> <a href="tel:2674673865">267-467-3865</a></p>
+    
+    <form class="contact-form" id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <button id="theme-toggle" class="floating-button">🌓</button>
+  <a href="index.html" class="floating-contact-button">🏠 Home</a>
+
+  <script>
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (prefersDark) {
+      document.body.classList.add('dark');
+    }
+
+    const toggleButton = document.getElementById('theme-toggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+
+    function showThankYouMessage() {
+      alert('Thank you! I will be in touch soon.');
+    }
+
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', async function(event) {
+      event.preventDefault();
+
+      const formData = new FormData(form);
+
+      await fetch('https://formspree.io/f/xvgrezrp', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      showThankYouMessage();
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
